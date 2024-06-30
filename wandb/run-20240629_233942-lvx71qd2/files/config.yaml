@@ -1,0 +1,182 @@
+wandb_version: 1
+
+is_debugging:
+  desc: null
+  value: 'False'
+all_samples_as_train:
+  desc: null
+  value: 'False'
+fold:
+  desc: null
+  value: '2'
+seed:
+  desc: null
+  value: '42'
+max_epochs:
+  desc: null
+  value: '100'
+preprocessed_data_dir:
+  desc: null
+  value: /home/sarim.hashmi/Downloads/brat/brats_preprocessed/
+json_brats2024_goat_fold:
+  desc: null
+  value: /home/sarim.hashmi/Downloads/brat/brats_adult_glimo_demo.json
+mednext_size:
+  desc: null
+  value: B
+mednext_ksize:
+  desc: null
+  value: '3'
+mednext_ckpt:
+  desc: null
+  value: None
+deep_sup:
+  desc: null
+  value: 'True'
+batch_size:
+  desc: null
+  value: '2'
+sw_batch_size:
+  desc: null
+  value: '4'
+num_workers:
+  desc: null
+  value: '4'
+roi_x:
+  desc: null
+  value: '128'
+roi_y:
+  desc: null
+  value: '128'
+roi_z:
+  desc: null
+  value: '128'
+infer_overlap:
+  desc: null
+  value: '0.5'
+aug_type:
+  desc: null
+  value: '1'
+loss_type:
+  desc: null
+  value: '3'
+mean_batch:
+  desc: null
+  value: 'True'
+lr:
+  desc: null
+  value: '0.0003'
+weight_decay:
+  desc: null
+  value: 1e-06
+lr_scheduler:
+  desc: null
+  value: cosine-with-warmup
+n_gpus:
+  desc: null
+  value: '1'
+pin_memory:
+  desc: null
+  value: 'True'
+check_val_every_n_epoch:
+  desc: null
+  value: '1'
+wandb_project_name:
+  desc: null
+  value: brats2024-goat
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.19
+    cli_version: 0.15.4
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    start_time: 1719689982.031415
+    t:
+      1:
+      - 1
+      - 9
+      - 41
+      - 48
+      - 55
+      2:
+      - 1
+      - 9
+      - 41
+      - 48
+      - 55
+      3:
+      - 7
+      - 13
+      - 16
+      - 23
+      4: 3.8.19
+      5: 0.15.4
+      8:
+      - 2
+      - 5
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: val_loss
+      5: 1
+      6:
+      - 1
+    - 1: val_avg
+      5: 1
+      6:
+      - 1
+    - 1: val_tc
+      5: 1
+      6:
+      - 1
+    - 1: val_wt
+      5: 1
+      6:
+      - 1
+    - 1: val_et
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_epoch
+      5: 1
+      6:
+      - 1
+    - 1: lr-AdamW
+      5: 1
+      6:
+      - 1
+    - 1: lr-AdamW-momentum
+      5: 1
+      6:
+      - 1
+    - 1: train_loss_step
+      5: 1
+      6:
+      - 1
+    - 1: test_loss
+      5: 1
+      6:
+      - 1
+    - 1: test_avg
+      5: 1
+      6:
+      - 1
+    - 1: test_tc
+      5: 1
+      6:
+      - 1
+    - 1: test_wt
+      5: 1
+      6:
+      - 1
+    - 1: test_et
+      5: 1
+      6:
+      - 1

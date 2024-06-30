@@ -1,0 +1,26 @@
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:406: LightningDeprecationWarning: The NVIDIA/apex AMP implementation has been deprecated upstream. Consequently, its integration inside PyTorch Lightning has been deprecated in v1.9.0 and will be removed in v2.0.0. The `Trainer(amp_backend='native')` argument is deprecated. Removing this argument will avoid this message, it will select PyTorch's implementation automatically.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:478: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/lightning_fabric/plugins/environments/slurm.py:165: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python mednext_train.py ...
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+> /home/sarim.hashmi/Downloads/brat/BraTS2024_BioMedIAMBZ/mednext_train.py(190)<module>()
+-> trainer.fit(module, dm)
+[<pytorch_lightning.callbacks.model_checkpoint.ModelCheckpoint object at 0x7f298f6d38e0>, <pytorch_lightning.callbacks.lr_monitor.LearningRateMonitor object at 0x7f298f6d3580>, <pytorch_lightning.callbacks.progress.tqdm_progress.TQDMProgressBar object at 0x7f2b2ea5cdf0>, <pytorch_lightning.callbacks.model_summary.ModelSummary object at 0x7f2b2ea5cb80>, <pytorch_lightning.callbacks.gradient_accumulation_scheduler.GradientAccumulationScheduler object at 0x7f2b2ea5cc40>]
+<pytorch_lightning.trainer.trainer.Trainer object at 0x7f2b2ea5c2b0>
+*** AttributeError: 'DataModule' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "mednext_train.py", line 190, in <module>
+    trainer.fit(module, dm)
+  File "mednext_train.py", line 190, in <module>
+    trainer.fit(module, dm)
+  File "/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

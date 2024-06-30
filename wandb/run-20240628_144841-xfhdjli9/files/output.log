@@ -1,0 +1,232 @@
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:406: LightningDeprecationWarning: The NVIDIA/apex AMP implementation has been deprecated upstream. Consequently, its integration inside PyTorch Lightning has been deprecated in v1.9.0 and will be removed in v2.0.0. The `Trainer(amp_backend='native')` argument is deprecated. Removing this argument will avoid this message, it will select PyTorch's implementation automatically.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:478: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/lightning_fabric/plugins/environments/slurm.py:165: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python mednext_train.py ...
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name      | Type             | Params
+-----------------------------------------------
+0 | model     | MedNeXt          | 10.5 M
+1 | criterion | CriterionWrapper | 0
+-----------------------------------------------
+10.5 M    Trainable params
+0         Non-trainable params
+10.5 M    Total params
+42.117    Total estimated model params size (MB)
+
+Epoch 0:   0%|                                                                                                                | 0/11 [00:00<?, ?it/s]
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py:1609: PossibleUserWarning: The number of training batches (5) is smaller than the logging interval Trainer(log_every_n_steps=10). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+
+
+
+Epoch 0:  45%|██████████████████████████▎                               | 5/11 [00:17<00:21,  3.59s/it, loss=2.27, v_num=jli9, train_loss_step=2.290]
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.58s/it]
+
+
+
+
+
+Epoch 1:  45%|▍| 5/11 [00:09<00:11,  1.91s/it, loss=2.25, v_num=jli9, train_loss_step=2.210, val_loss=1.140, val_avg=0.0119, val_tc=0.00236, val_wt=0
+
+
+
+
+Validation DataLoader 0:  67%|███████████████████████████████████████████████████████████▎                             | 4/6 [00:06<00:03,  1.54s/it]
+
+
+
+
+
+Epoch 2:  45%|▍| 5/11 [00:09<00:11,  1.93s/it, loss=2.22, v_num=jli9, train_loss_step=2.130, val_loss=1.130, val_avg=0.0144, val_tc=0.00236, val_wt=0
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.54s/it]
+
+
+
+
+
+Epoch 3:  45%|▍| 5/11 [00:09<00:11,  1.91s/it, loss=2.18, v_num=jli9, train_loss_step=2.070, val_loss=1.120, val_avg=0.0192, val_tc=0.00247, val_wt=0
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.55s/it]
+
+
+
+
+
+Epoch 4:  45%|▍| 5/11 [00:09<00:11,  1.91s/it, loss=2.12, v_num=jli9, train_loss_step=2.040, val_loss=1.100, val_avg=0.0325, val_tc=0.00492, val_wt=0
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.55s/it]
+
+
+
+Epoch 5:  45%|▍| 5/11 [00:09<00:11,  1.94s/it, loss=2.05, v_num=jli9, train_loss_step=1.890, val_loss=1.070, val_avg=0.0494, val_tc=0.00543, val_wt=0
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.55s/it]
+
+
+
+
+Epoch 6:  45%|▍| 5/11 [00:09<00:11,  1.92s/it, loss=1.99, v_num=jli9, train_loss_step=1.860, val_loss=1.050, val_avg=0.0495, val_tc=0.000765, val_wt=
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.55s/it]
+
+
+
+
+
+Epoch 7:  45%|▍| 5/11 [00:09<00:11,  1.94s/it, loss=1.94, v_num=jli9, train_loss_step=1.810, val_loss=1.040, val_avg=0.0536, val_tc=0.000, val_wt=0.1
+
+
+
+
+Validation DataLoader 0: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:09<00:00,  1.55s/it]
+
+
+
+
+
+Epoch 8:  45%|▍| 5/11 [00:09<00:11,  1.94s/it, loss=1.89, v_num=jli9, train_loss_step=1.920, val_loss=1.030, val_avg=0.0638, val_tc=0.000, val_wt=0.1
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.55s/it]
+
+
+
+
+
+Epoch 9:  45%|▍| 5/11 [00:09<00:11,  1.92s/it, loss=1.86, v_num=jli9, train_loss_step=1.850, val_loss=1.020, val_avg=0.217, val_tc=0.000, val_wt=0.31
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.57s/it]
+
+
+
+Epoch 10:  45%|▍| 5/11 [00:09<00:11,  1.92s/it, loss=1.82, v_num=jli9, train_loss_step=1.780, val_loss=1.010, val_avg=0.308, val_tc=0.000, val_wt=0.4
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.56s/it]
+
+
+
+
+Epoch 11:  45%|▍| 5/11 [00:09<00:11,  1.90s/it, loss=1.79, v_num=jli9, train_loss_step=1.650, val_loss=1.000, val_avg=0.318, val_tc=0.000, val_wt=0.4
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.53s/it]
+
+
+
+
+
+Epoch 12:  45%|▍| 5/11 [00:09<00:11,  1.94s/it, loss=1.76, v_num=jli9, train_loss_step=1.670, val_loss=0.997, val_avg=0.334, val_tc=0.000, val_wt=0.5
+
+
+
+
+Validation DataLoader 0:  67%|███████████████████████████████████████████████████████████▎                             | 4/6 [00:06<00:03,  1.56s/it]
+
+
+
+
+
+Epoch 13:  45%|▍| 5/11 [00:09<00:11,  1.93s/it, loss=1.73, v_num=jli9, train_loss_step=1.720, val_loss=0.992, val_avg=0.308, val_tc=0.000, val_wt=0.4
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.56s/it]
+
+
+
+
+
+Epoch 14:  45%|▍| 5/11 [00:09<00:11,  1.92s/it, loss=1.71, v_num=jli9, train_loss_step=1.710, val_loss=0.989, val_avg=0.336, val_tc=0.000, val_wt=0.5
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.55s/it]
+
+
+
+Epoch 15:  45%|▍| 5/11 [00:09<00:11,  1.95s/it, loss=1.7, v_num=jli9, train_loss_step=1.570, val_loss=0.980, val_avg=0.312, val_tc=0.000, val_wt=0.43
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.56s/it]
+
+
+
+
+Epoch 16:  45%|▍| 5/11 [00:09<00:11,  1.93s/it, loss=1.68, v_num=jli9, train_loss_step=1.740, val_loss=0.974, val_avg=0.303, val_tc=0.000, val_wt=0.4
+
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.55s/it]
+
+
+
+
+
+Epoch 17:  45%|▍| 5/11 [00:09<00:11,  1.95s/it, loss=1.67, v_num=jli9, train_loss_step=1.570, val_loss=0.967, val_avg=0.333, val_tc=0.000, val_wt=0.5
+
+
+
+
+Validation DataLoader 0:  83%|██████████████████████████████████████████████████████████████████████████▏              | 5/6 [00:07<00:01,  1.58s/it]
+
+
+
+Epoch 18:  18%|▏| 2/11 [00:04<00:19,  2.16s/it, loss=1.66, v_num=jli9, train_loss_step=1.680, val_loss=0.960, val_avg=0.412, val_tc=0.167, val_wt=0.5
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py:48: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")
+Restoring states from the checkpoint path at ./brats2024-goat/xfhdjli9/checkpoints/epoch=17-step=90.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+
+Testing DataLoader 0:  17%|███████████████▎                                                                            | 1/6 [00:01<00:07,  1.58s/it]

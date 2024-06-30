@@ -1,0 +1,41 @@
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:406: LightningDeprecationWarning: The NVIDIA/apex AMP implementation has been deprecated upstream. Consequently, its integration inside PyTorch Lightning has been deprecated in v1.9.0 and will be removed in v2.0.0. The `Trainer(amp_backend='native')` argument is deprecated. Removing this argument will avoid this message, it will select PyTorch's implementation automatically.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:478: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/lightning_fabric/plugins/environments/slurm.py:165: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python mednext_train.py ...
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name      | Type             | Params
+-----------------------------------------------
+0 | model     | MedNeXt          | 10.5 M
+1 | criterion | CriterionWrapper | 0
+-----------------------------------------------
+10.5 M    Trainable params
+0         Non-trainable params
+10.5 M    Total params
+42.117    Total estimated model params size (MB)
+
+Epoch 0:   0%|                                                                                                                                                                                                                                                                                                                            | 0/11 [00:00<?, ?it/s]
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py:1609: PossibleUserWarning: The number of training batches (5) is smaller than the logging interval Trainer(log_every_n_steps=10). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+
+
+
+
+Epoch 0:  45%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                               | 5/11 [00:18<00:21,  3.65s/it, loss=2.27, v_num=9iim, train_loss_step=2.290]
+
+
+
+
+Validation DataLoader 0:  67%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                 | 4/6 [00:06<00:03,  1.62s/it]
+Epoch 0, global step 5: 'val_loss' reached 1.14308 (best 1.14308), saving model to './brats2024-goat/lhd99iim/checkpoints/epoch=0-step=5.ckpt' as top 1
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py:48: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")
+
+Testing DataLoader 0:   0%|                                                                                                                                                                                                                                                                                                                | 0/6 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Loaded model weights from checkpoint at ./brats2024-goat/lhd99iim/checkpoints/epoch=0-step=5.ckpt

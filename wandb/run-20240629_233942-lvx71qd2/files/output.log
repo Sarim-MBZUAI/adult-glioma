@@ -1,0 +1,538 @@
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:406: LightningDeprecationWarning: The NVIDIA/apex AMP implementation has been deprecated upstream. Consequently, its integration inside PyTorch Lightning has been deprecated in v1.9.0 and will be removed in v2.0.0. The `Trainer(amp_backend='native')` argument is deprecated. Removing this argument will avoid this message, it will select PyTorch's implementation automatically.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:478: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/lightning_fabric/plugins/environments/slurm.py:165: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python mednext_train.py ...
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+You are using a CUDA device ('NVIDIA GeForce RTX 4090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name      | Type             | Params
+-----------------------------------------------
+0 | model     | MedNeXt          | 10.5 M
+1 | criterion | CriterionWrapper | 0
+-----------------------------------------------
+10.5 M    Trainable params
+0         Non-trainable params
+10.5 M    Total params
+42.121    Total estimated model params size (MB)
+
+
+Epoch 0:   0%|                                                                                                | 0/9 [00:00<?, ?it/s]
+/home/sarim.hashmi/anaconda3/envs/brats_adam/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py:1609: PossibleUserWarning: The number of training batches (7) is smaller than the logging interval Trainer(log_every_n_steps=10). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+
+
+Epoch 0:  78%|████████████████████████████████▋         | 7/9 [00:18<00:05,  2.63s/it, loss=2.25, v_num=1qd2, train_loss_step=2.200]
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+
+Epoch 1: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=2.23, v_num=1qd2, train_loss_step=2.170, val_loss=1.130, val_avg=0.025, val_tc=0.
+
+
+Epoch 2:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=2.19, v_num=1qd2, train_loss_step=2.090, val_loss=1.130, val_avg=0.025, val_tc=0.
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+
+Epoch 3: 100%|█| 9/9 [00:06<00:00,  1.43it/s, loss=2.12, v_num=1qd2, train_loss_step=2.040, val_loss=1.080, val_avg=0.0324, val_tc=0
+
+
+
+Epoch 4:  89%|▉| 8/9 [00:06<00:00,  1.33it/s, loss=2.05, v_num=1qd2, train_loss_step=1.990, val_loss=1.080, val_avg=0.0324, val_tc=0
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 5:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=1.99, v_num=1qd2, train_loss_step=1.920, val_loss=1.050, val_avg=0.0289, val_tc=0
+
+Validation: 0it [00:00, ?it/s]
+
+
+
+
+Epoch 6: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=1.93, v_num=1qd2, train_loss_step=1.890, val_loss=1.020, val_avg=0.170, val_tc=0.
+
+
+Epoch 7:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=1.89, v_num=1qd2, train_loss_step=1.870, val_loss=1.020, val_avg=0.170, val_tc=0.
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+Epoch 8: 100%|█| 9/9 [00:06<00:00,  1.44it/s, loss=1.86, v_num=1qd2, train_loss_step=1.790, val_loss=0.999, val_avg=0.345, val_tc=0.
+
+
+Epoch 9:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=1.83, v_num=1qd2, train_loss_step=1.780, val_loss=0.999, val_avg=0.345, val_tc=0.
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+Epoch 10: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=1.8, v_num=1qd2, train_loss_step=1.760, val_loss=0.986, val_avg=0.485, val_tc=0.
+
+
+Epoch 11:  78%|▊| 7/9 [00:05<00:01,  1.39it/s, loss=1.76, v_num=1qd2, train_loss_step=1.760, val_loss=0.986, val_avg=0.485, val_tc=0
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+
+Epoch 12: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=1.74, v_num=1qd2, train_loss_step=1.820, val_loss=0.969, val_avg=0.493, val_tc=0
+
+
+
+Epoch 13:  89%|▉| 8/9 [00:05<00:00,  1.34it/s, loss=1.73, v_num=1qd2, train_loss_step=1.740, val_loss=0.969, val_avg=0.493, val_tc=0
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 14:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=1.71, v_num=1qd2, train_loss_step=1.590, val_loss=0.954, val_avg=0.494, val_tc=0
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 15:  89%|▉| 8/9 [00:06<00:00,  1.26it/s, loss=1.67, v_num=1qd2, train_loss_step=1.610, val_loss=0.938, val_avg=0.382, val_tc=0
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.48it/s]
+
+
+
+
+
+Epoch 16: 100%|█| 9/9 [00:06<00:00,  1.33it/s, loss=1.64, v_num=1qd2, train_loss_step=1.580, val_loss=0.923, val_avg=0.488, val_tc=0
+
+
+Epoch 17:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=1.57, v_num=1qd2, train_loss_step=1.380, val_loss=0.923, val_avg=0.488, val_tc=0
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+
+Epoch 18: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=1.5, v_num=1qd2, train_loss_step=1.580, val_loss=0.869, val_avg=0.425, val_tc=0.
+
+
+
+Epoch 19:  89%|▉| 8/9 [00:06<00:00,  1.32it/s, loss=1.46, v_num=1qd2, train_loss_step=1.740, val_loss=0.869, val_avg=0.425, val_tc=0
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+
+
+Epoch 20: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=1.45, v_num=1qd2, train_loss_step=1.440, val_loss=0.862, val_avg=0.426, val_tc=0
+
+
+Epoch 21:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=1.4, v_num=1qd2, train_loss_step=1.230, val_loss=0.862, val_avg=0.426, val_tc=0.
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 22:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=1.36, v_num=1qd2, train_loss_step=1.430, val_loss=0.876, val_avg=0.402, val_tc=0
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+
+Epoch 23: 100%|█| 9/9 [00:06<00:00,  1.43it/s, loss=1.34, v_num=1qd2, train_loss_step=1.690, val_loss=0.848, val_avg=0.569, val_tc=0
+
+
+Epoch 24:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=1.32, v_num=1qd2, train_loss_step=0.769, val_loss=0.848, val_avg=0.569, val_tc=0
+
+Validation: 0it [00:00, ?it/s]
+
+
+Epoch 25:  78%|▊| 7/9 [00:05<00:01,  1.37it/s, loss=1.25, v_num=1qd2, train_loss_step=0.715, val_loss=0.809, val_avg=0.380, val_tc=0
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+
+Epoch 26: 100%|█| 9/9 [00:06<00:00,  1.44it/s, loss=1.23, v_num=1qd2, train_loss_step=1.140, val_loss=0.745, val_avg=0.316, val_tc=0
+
+
+
+Epoch 27:  78%|▊| 7/9 [00:05<00:01,  1.34it/s, loss=1.27, v_num=1qd2, train_loss_step=0.606, val_loss=0.745, val_avg=0.316, val_tc=0
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+
+Epoch 28: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=1.26, v_num=1qd2, train_loss_step=1.590, val_loss=0.827, val_avg=0.327, val_tc=0
+
+
+Epoch 29:  78%|▊| 7/9 [00:05<00:01,  1.34it/s, loss=1.17, v_num=1qd2, train_loss_step=1.660, val_loss=0.827, val_avg=0.327, val_tc=0
+
+Validation: 0it [00:00, ?it/s]
+
+
+Epoch 30:  78%|▊| 7/9 [00:05<00:01,  1.34it/s, loss=1.13, v_num=1qd2, train_loss_step=0.938, val_loss=0.881, val_avg=0.514, val_tc=0
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 31:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=1.11, v_num=1qd2, train_loss_step=0.892, val_loss=0.763, val_avg=0.513, val_tc=0
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 32:  89%|▉| 8/9 [00:06<00:00,  1.33it/s, loss=1.01, v_num=1qd2, train_loss_step=0.770, val_loss=0.731, val_avg=0.665, val_tc=0
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 33:  78%|▊| 7/9 [00:05<00:01,  1.37it/s, loss=0.978, v_num=1qd2, train_loss_step=0.844, val_loss=0.702, val_avg=0.692, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+Epoch 34: 100%|█| 9/9 [00:06<00:00,  1.43it/s, loss=0.939, v_num=1qd2, train_loss_step=0.747, val_loss=0.673, val_avg=0.718, val_tc=
+
+
+
+
+Epoch 35: 100%|█| 9/9 [00:06<00:00,  1.44it/s, loss=0.934, v_num=1qd2, train_loss_step=1.630, val_loss=0.616, val_avg=0.775, val_tc=
+
+
+
+Epoch 36:  89%|▉| 8/9 [00:06<00:00,  1.31it/s, loss=0.921, v_num=1qd2, train_loss_step=0.878, val_loss=0.616, val_avg=0.775, val_tc=
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+
+Epoch 37: 100%|█| 9/9 [00:06<00:00,  1.42it/s, loss=1, v_num=1qd2, train_loss_step=0.823, val_loss=0.673, val_avg=0.719, val_tc=0.77
+
+
+
+
+Epoch 38: 100%|█| 9/9 [00:06<00:00,  1.44it/s, loss=0.909, v_num=1qd2, train_loss_step=0.370, val_loss=0.652, val_avg=0.737, val_tc=
+
+
+Epoch 39:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=0.923, v_num=1qd2, train_loss_step=1.550, val_loss=0.652, val_avg=0.737, val_tc=
+
+Validation: 0it [00:00, ?it/s]
+
+
+Epoch 40:  78%|▊| 7/9 [00:05<00:01,  1.39it/s, loss=0.928, v_num=1qd2, train_loss_step=0.375, val_loss=0.619, val_avg=0.770, val_tc=
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 41:  89%|▉| 8/9 [00:06<00:00,  1.31it/s, loss=1.01, v_num=1qd2, train_loss_step=1.520, val_loss=0.661, val_avg=0.732, val_tc=0
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+
+
+Epoch 42: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.885, v_num=1qd2, train_loss_step=0.298, val_loss=0.694, val_avg=0.699, val_tc=
+
+
+Epoch 43:  78%|▊| 7/9 [00:05<00:01,  1.34it/s, loss=0.879, v_num=1qd2, train_loss_step=0.771, val_loss=0.694, val_avg=0.699, val_tc=
+
+Validation: 0it [00:00, ?it/s]
+
+
+Epoch 44:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=0.831, v_num=1qd2, train_loss_step=0.571, val_loss=0.622, val_avg=0.518, val_tc=
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 45:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.842, v_num=1qd2, train_loss_step=0.564, val_loss=0.648, val_avg=0.739, val_tc=
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+Epoch 46: 100%|█| 9/9 [00:06<00:00,  1.43it/s, loss=0.882, v_num=1qd2, train_loss_step=1.550, val_loss=0.627, val_avg=0.763, val_tc=
+
+
+
+
+Epoch 47: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=0.858, v_num=1qd2, train_loss_step=0.679, val_loss=0.624, val_avg=0.767, val_tc=
+
+
+
+
+Epoch 48: 100%|█| 9/9 [00:06<00:00,  1.43it/s, loss=0.868, v_num=1qd2, train_loss_step=1.460, val_loss=0.639, val_avg=0.752, val_tc=
+
+
+Epoch 49:  78%|▊| 7/9 [00:05<00:01,  1.33it/s, loss=0.79, v_num=1qd2, train_loss_step=0.620, val_loss=0.639, val_avg=0.752, val_tc=0
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 50:  78%|▊| 7/9 [00:05<00:01,  1.37it/s, loss=0.879, v_num=1qd2, train_loss_step=1.420, val_loss=0.836, val_avg=0.565, val_tc=
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 51:  89%|▉| 8/9 [00:06<00:00,  1.32it/s, loss=0.899, v_num=1qd2, train_loss_step=0.668, val_loss=0.626, val_avg=0.764, val_tc=
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+
+Epoch 52: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.845, v_num=1qd2, train_loss_step=0.617, val_loss=0.635, val_avg=0.753, val_tc=
+
+
+
+
+Epoch 53: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=0.888, v_num=1qd2, train_loss_step=0.574, val_loss=0.644, val_avg=0.746, val_tc=
+
+
+
+
+Epoch 54: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.923, v_num=1qd2, train_loss_step=1.440, val_loss=0.635, val_avg=0.756, val_tc=
+
+
+Epoch 55:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.974, v_num=1qd2, train_loss_step=0.647, val_loss=0.635, val_avg=0.756, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 56:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=0.917, v_num=1qd2, train_loss_step=0.753, val_loss=0.620, val_avg=0.769, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 57:  89%|▉| 8/9 [00:06<00:00,  1.31it/s, loss=0.817, v_num=1qd2, train_loss_step=0.277, val_loss=0.629, val_avg=0.760, val_tc=
+
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+
+Epoch 58: 100%|█| 9/9 [00:06<00:00,  1.42it/s, loss=0.86, v_num=1qd2, train_loss_step=1.410, val_loss=0.588, val_avg=0.801, val_tc=0
+
+
+
+Epoch 59:  89%|▉| 8/9 [00:06<00:00,  1.33it/s, loss=0.884, v_num=1qd2, train_loss_step=0.490, val_loss=0.588, val_avg=0.801, val_tc=
+
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 60: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.9, v_num=1qd2, train_loss_step=1.410, val_loss=0.584, val_avg=0.804, val_tc=0.
+
+
+Epoch 61:  78%|▊| 7/9 [00:05<00:01,  1.37it/s, loss=0.823, v_num=1qd2, train_loss_step=0.646, val_loss=0.584, val_avg=0.804, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 62:  78%|▊| 7/9 [00:05<00:01,  1.38it/s, loss=0.742, v_num=1qd2, train_loss_step=0.598, val_loss=0.627, val_avg=0.761, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+Epoch 63: 100%|█| 9/9 [00:06<00:00,  1.43it/s, loss=0.744, v_num=1qd2, train_loss_step=1.010, val_loss=0.606, val_avg=0.783, val_tc=
+
+
+
+
+Epoch 64: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=0.829, v_num=1qd2, train_loss_step=0.445, val_loss=0.626, val_avg=0.764, val_tc=
+
+
+Epoch 65:  78%|▊| 7/9 [00:05<00:01,  1.37it/s, loss=0.815, v_num=1qd2, train_loss_step=1.420, val_loss=0.626, val_avg=0.764, val_tc=
+
+Validation: 0it [00:00, ?it/s]
+
+
+Epoch 66:  78%|▊| 7/9 [00:05<00:01,  1.34it/s, loss=0.755, v_num=1qd2, train_loss_step=0.236, val_loss=0.642, val_avg=0.748, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 67:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=0.813, v_num=1qd2, train_loss_step=0.356, val_loss=0.620, val_avg=0.770, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 68:  89%|▉| 8/9 [00:06<00:00,  1.32it/s, loss=0.814, v_num=1qd2, train_loss_step=0.675, val_loss=0.644, val_avg=0.747, val_tc=
+
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 69: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.804, v_num=1qd2, train_loss_step=0.537, val_loss=0.620, val_avg=0.769, val_tc=
+
+
+
+
+Epoch 70: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.855, v_num=1qd2, train_loss_step=1.420, val_loss=0.617, val_avg=0.772, val_tc=
+
+
+
+
+Epoch 71: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=0.852, v_num=1qd2, train_loss_step=0.664, val_loss=0.609, val_avg=0.779, val_tc=
+
+
+Epoch 72:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.856, v_num=1qd2, train_loss_step=0.466, val_loss=0.609, val_avg=0.779, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 73:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.832, v_num=1qd2, train_loss_step=1.480, val_loss=0.603, val_avg=0.785, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 74:  89%|▉| 8/9 [00:06<00:00,  1.32it/s, loss=0.841, v_num=1qd2, train_loss_step=0.552, val_loss=0.635, val_avg=0.753, val_tc=
+
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 75: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.842, v_num=1qd2, train_loss_step=1.470, val_loss=0.607, val_avg=0.781, val_tc=
+
+
+
+
+Epoch 76: 100%|█| 9/9 [00:06<00:00,  1.38it/s, loss=0.834, v_num=1qd2, train_loss_step=0.655, val_loss=0.641, val_avg=0.751, val_tc=
+
+
+
+
+Epoch 77: 100%|█| 9/9 [00:06<00:00,  1.38it/s, loss=0.819, v_num=1qd2, train_loss_step=1.400, val_loss=0.637, val_avg=0.755, val_tc=
+
+
+
+
+Epoch 78: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.73, v_num=1qd2, train_loss_step=0.477, val_loss=0.626, val_avg=0.764, val_tc=0
+
+
+Epoch 79:  78%|▊| 7/9 [00:05<00:01,  1.32it/s, loss=0.773, v_num=1qd2, train_loss_step=0.483, val_loss=0.626, val_avg=0.764, val_tc=
+
+Validation: 0it [00:00, ?it/s]
+
+
+Epoch 80:  78%|▊| 7/9 [00:05<00:01,  1.39it/s, loss=0.773, v_num=1qd2, train_loss_step=0.661, val_loss=0.615, val_avg=0.774, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 81:  89%|▉| 8/9 [00:05<00:00,  1.34it/s, loss=0.824, v_num=1qd2, train_loss_step=0.582, val_loss=0.615, val_avg=0.774, val_tc=
+
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 82: 100%|█| 9/9 [00:06<00:00,  1.43it/s, loss=0.785, v_num=1qd2, train_loss_step=1.480, val_loss=0.612, val_avg=0.775, val_tc=
+
+
+
+
+Epoch 83: 100%|█| 9/9 [00:06<00:00,  1.42it/s, loss=0.774, v_num=1qd2, train_loss_step=0.274, val_loss=0.610, val_avg=0.778, val_tc=
+
+
+Epoch 84:  78%|▊| 7/9 [00:05<00:01,  1.37it/s, loss=0.799, v_num=1qd2, train_loss_step=0.654, val_loss=0.610, val_avg=0.778, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 85:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.819, v_num=1qd2, train_loss_step=0.254, val_loss=0.611, val_avg=0.777, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 86:  89%|▉| 8/9 [00:06<00:00,  1.31it/s, loss=0.829, v_num=1qd2, train_loss_step=0.602, val_loss=0.616, val_avg=0.771, val_tc=
+
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+Epoch 87:  89%|▉| 8/9 [00:06<00:00,  1.30it/s, loss=0.728, v_num=1qd2, train_loss_step=0.519, val_loss=0.619, val_avg=0.768, val_tc=
+
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+
+
+Epoch 88: 100%|█| 9/9 [00:06<00:00,  1.41it/s, loss=0.703, v_num=1qd2, train_loss_step=0.433, val_loss=0.620, val_avg=0.767, val_tc=
+
+
+
+
+Epoch 89: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.753, v_num=1qd2, train_loss_step=1.440, val_loss=0.617, val_avg=0.770, val_tc=
+
+
+Epoch 90:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.8, v_num=1qd2, train_loss_step=0.671, val_loss=0.617, val_avg=0.770, val_tc=0.
+
+Validation: 0it [00:00, ?it/s]
+
+
+Epoch 91:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=0.822, v_num=1qd2, train_loss_step=1.450, val_loss=0.618, val_avg=0.770, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 92:  78%|▊| 7/9 [00:05<00:01,  1.39it/s, loss=0.834, v_num=1qd2, train_loss_step=0.458, val_loss=0.614, val_avg=0.774, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 93:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.791, v_num=1qd2, train_loss_step=0.482, val_loss=0.612, val_avg=0.776, val_tc=
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+
+
+Epoch 94: 100%|█| 9/9 [00:06<00:00,  1.42it/s, loss=0.701, v_num=1qd2, train_loss_step=0.627, val_loss=0.614, val_avg=0.774, val_tc=
+
+
+
+
+Epoch 95: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.73, v_num=1qd2, train_loss_step=0.875, val_loss=0.616, val_avg=0.772, val_tc=0
+
+
+
+
+Epoch 96: 100%|█| 9/9 [00:06<00:00,  1.40it/s, loss=0.794, v_num=1qd2, train_loss_step=1.410, val_loss=0.616, val_avg=0.771, val_tc=
+
+
+Epoch 97:  78%|▊| 7/9 [00:05<00:01,  1.36it/s, loss=0.904, v_num=1qd2, train_loss_step=0.574, val_loss=0.616, val_avg=0.771, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 98:  78%|▊| 7/9 [00:05<00:01,  1.35it/s, loss=0.821, v_num=1qd2, train_loss_step=0.490, val_loss=0.616, val_avg=0.772, val_tc=
+
+Validation DataLoader 0:   0%|                                                                                | 0/2 [00:00<?, ?it/s]
+
+
+Epoch 99:  89%|▉| 8/9 [00:05<00:00,  1.35it/s, loss=0.769, v_num=1qd2, train_loss_step=0.637, val_loss=0.616, val_avg=0.772, val_tc=
+Validation DataLoader 0:  50%|████████████████████████████████████                                    | 1/2 [00:00<00:00,  1.58it/s]
+
+Testing: 0it [00:00, ?it/s]
+`Trainer.fit` stopped: `max_epochs=100` reached.
+You are using a CUDA device ('NVIDIA GeForce RTX 4090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Restoring states from the checkpoint path at ./brats2024-goat/lvx71qd2/checkpoints/epoch=60-step=427.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing DataLoader 0: 100%|███████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  2.09it/s]
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test_avg            0.8038414716720581
+         test_et            0.8909167051315308
+        test_loss           0.5842205211520195
+         test_tc             0.869161069393158
+         test_wt             0.586089015007019
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

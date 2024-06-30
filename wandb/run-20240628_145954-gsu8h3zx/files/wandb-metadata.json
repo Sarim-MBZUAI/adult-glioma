@@ -1,0 +1,200 @@
+{
+    "os": "Linux-5.15.133-ql-generic-13.0-9-x86_64-with-glibc2.17",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-06-28T10:59:55.406734",
+    "startedAt": "2024-06-28T10:59:54.358883",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "mednext_train.py",
+    "codePath": "mednext_train.py",
+    "git": {
+        "remote": "https://github.com/BioMedIA-MBZUAI/BraTS2024_BioMedIAMBZ.git",
+        "commit": "9f6209f1c2810041fc9d324df7e40dfa0b962fa8"
+    },
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2518.5575,
+        "min": 1000.0,
+        "max": 3500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2712.626,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        }
+    ],
+    "disk": {
+        "total": 1.0,
+        "used": 0.042224884033203125
+    },
+    "gpu": "Quadro RTX 6000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Quadro RTX 6000",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 125.55147552490234
+    }
+}
