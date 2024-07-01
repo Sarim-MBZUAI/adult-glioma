@@ -48,7 +48,7 @@ class ConvertToMultiChannelBasedOnBrats2023Classes(Transform):
             img = img.squeeze(0)
         
         
-        result = [(img == 1) | (img == 3), (img == 1) | (img == 3) | (img == 2), (img == 3),(img == 1) | (img == 3 )]
+        result = [(img == 1) | (img == 3), (img == 1) | (img == 3) | (img == 2), img == 3, img == 4 ]
         # merge labels 1 (tumor non-enh) and 3 (tumor enh) and 2 (large edema) to WT
         # label 3 is ET
         return torch.stack(result, dim=0) if isinstance(img, torch.Tensor) else np.stack(result, axis=0)

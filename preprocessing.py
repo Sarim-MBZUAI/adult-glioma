@@ -11,7 +11,7 @@ n_jobs=8
 
 if __name__ == '__main__':
     # ---------------------------------------------------------------------------
-    source_directory= "/home/sarim.hashmi/Downloads/brat/training_data1_v2"
+    source_directory= "/home/sarim.hashmi/Downloads/brat/training_data1_v2/training_data1_v2"
     target_directory= "/home/sarim.hashmi/Downloads/brat/brats_preprocessed"
     patch_size = [128, 128, 128]
     

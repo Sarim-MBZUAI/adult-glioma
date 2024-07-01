@@ -1,40 +1,17 @@
-# BraTS2024_BioMedIAMBZ
+# Project Status
 
-## How To Use
+## To Do
 
-### Installation
+- [ ] **Investigate Cavity Relationship:**
+  - Examine how the cavity is related to all four MRI inputs.
+- [ ] **Update Evaluation Code:**
+  - Modify the evaluation code based on the findings from the cavity relationship with the other 4 MRI modalities.
 
-``` bash
-conda create -n brats python=3.8
-pip install -r requirements.txt
-```
+## Completed Tasks
 
-### Data Preprocessing
-
-1. Download the BraTS2023 Adult Glioma dataset and put it on the `dataset/` folder, so it will contain the following:
-```
-├── dataset
-│   ├── ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData
-│   ├── ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData
-│   ├── brats21_folds.json
-│   ├── BraTS2023_2017_GLI_Mapping.xlsx
-```
-2. Run `preprocessing.py`, but please check the `source_directory` and `target_directory` variables to make sure everything is correct.
-```
-conda activate brats-gli
-python preprocessing.py 
-```
-
-### Training
-For training a `MedNeXt` model, you can run the following command (but you may need to configure your wandb account beforehand):
-```
-python mednext_train.py
-```
-
-### 5-Fold CV Dice & HD95
-To calculate 5-fold CV Dice and HD95, we need to do two things;
-- get predictions from 5-fold (`cv-get-predictions.py`).
-- run post-processing and evaluation (`cv-postprocessing-and-eval.py`).
-- The idea of separating `cv-get-predictions.py` and `cv-postprocessing-and-eval.py` is to allow us to tune post-processing faster.# brats_glioma_experiment
-# brats_glioma_experiment
-# adult-glioma
+- [x] **Preprocessing Pipeline:**
+  - Converted the preprocessing to handle 4 channels.
+- [x] **Model Training:**
+  - Successfully trained the model for 5 folds.
+- [x] **Cross-Validation Predictions:**
+  - Ran `cv_get_predict.py` for the 5 folds.

@@ -1,4 +1,4 @@
-                                                                                                                                                                   import os
+import os
 import sys
 
 import copy
@@ -28,7 +28,7 @@ class Args:
     fold=4
     seed=42
     max_epochs=100
-    preprocessed_data_dir= "/home/sarim.hashmi/Downloads/brat/brats_preprocessed/"
+    preprocessed_data_dir= "/home/sarim.hashmi/Downloads/brat/brats_preprocessed"
     json_brats2024_goat_fold= "/home/sarim.hashmi/Downloads/brat/brats_adult_glimo_demo.json"
     mednext_size='B'
     mednext_ksize=3
